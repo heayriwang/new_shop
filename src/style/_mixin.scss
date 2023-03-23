@@ -1,0 +1,15 @@
+@mixin button($bg, $bd, $ol) {
+    background: $bg;
+    border: $bd;
+    outline: $ol;
+}
+
+@mixin position ($position, $top, $right, $bottom, $left, $zIndex) {
+    position: $position;
+    inset: $top, $right, $bottom, $left;
+    z-index: $zIndex;
+}
+
+@mixin background ($img, $h, $v) {
+    background: url($img)no-repeat $h $v/cover;
+}
